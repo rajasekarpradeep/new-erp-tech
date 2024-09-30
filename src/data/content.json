@@ -1,0 +1,139 @@
+{
+    "header": {
+      "logo": "/assets/images/logo.png",
+      "navigation": [
+        { "name": "Home", "link": "/" },
+        { "name": "Courses", "link": "/courses" },
+        { "name": "Instructors", "link": "/instructors" },
+        { "name": "Alumni", "link": "/alumni" },
+        { "name": "Contact", "link": "/contact" }
+      ]
+    },
+    "banner": {
+      "heading": "Welcome to Our Online Course Platform",
+      "subheading": "Learn the skills you need to succeed!",
+      "para":"Learn, build your job profile with exclusive placement assistance for 3+ years and get placed in your dream company. Join the collaborative community of live trainers, catering to various Finance Skills needed in the finance industry.",
+      "ctaText": "Get Started"
+    },
+    "courses": {
+      "heading": "Our Courses",
+      "subpara": "All the below courses can be pursued after passing 12th exams and along with graduation",
+      "courseCards":[
+        {
+        "title": "Financial Modelling",
+       "description": [
+        "27 hands-on courses",
+        "NSE certification",
+        "3+ Year Placement Assistance",
+        "Skills: Financial Statement Analysis, Modeling, Accounting, Budgeting, Forecasting",
+        "Career paths: Investment Banking, Private Equity, FP&A, Corp Dev, and more",
+        "Pricing: Rs 23,000"
+      ],
+        "ctaText2":"Download Brochure",
+        "ctaText": "Buy Now"
+      },
+      {
+        "title": "Investment Banking Operations",
+       "description": [
+        "27 hands-on courses",
+        "NSE certification",
+        "3+ Year Placement Assistance",
+        "Skills: Financial Statement Analysis, Modeling, Accounting, Budgeting, Forecasting",
+        "Career paths: Investment Banking, Private Equity, FP&A, Corp Dev, and more",
+        "Pricing: Rs 23,000"
+      ],
+        "ctaText2":"Download Brochure",
+        "ctaText": "Buy Now"
+      },
+      {
+        "title": "International Business & Retail Banking Operations",
+       "description": [
+        "27 hands-on courses",
+        "NSE certification",
+        "3+ Year Placement Assistance",
+        "Skills: Financial Statement Analysis, Modeling, Accounting, Budgeting, Forecasting",
+        "Career paths: Investment Banking, Private Equity, FP&A, Corp Dev, and more",
+        "Pricing: Rs 23,000"
+      ],
+        "ctaText2":"Download Brochure",
+        "ctaText": "Buy Now"
+      }
+    ]
+    },
+    "features": [
+    {
+      "title": "Feature 1",
+      "description": "Description for feature 1."
+    },
+    {
+      "title": "Feature 2",
+      "description": "Description for feature 2."
+    }
+  ],
+    "testimonials": [
+      {
+        "name": "John Doe",
+        "quote": "This platform changed my life!"
+      },
+      {
+        "name": "Jane Smith",
+        "quote": "The best learning experience I ever had."
+      }
+    ],
+    "instructors": [
+      {
+        "name": "Alice Johnson",
+        "bio": "Expert in JavaScript with 10 years of experience.",
+        "image": "/assets/images/instructor1.jpg"
+      },
+      {
+        "name": "Bob Martinez",
+        "bio": "Full Stack Developer and educator.",
+        "image": "/assets/images/instructor2.jpg"
+      }
+    ],
+    "alumni": [
+      {
+        "name": "Charles Xavier",
+        "work": "Developed a successful startup."
+      },
+      {
+        "name": "Diana Prince",
+        "work": "Lead engineer at a Fortune 500 company."
+      }
+    ],
+"footer": {
+          "copyright": "© 2024 Online Course Platform",
+          "exploreMenu": {
+            "title": "Explore",
+            "links": [
+              { "name": "Home", "url": "/" },
+              { "name": "Courses", "url": "/courses" },
+              { "name": "About us", "url": "/about" },
+              { "name": "Features", "url": "/features" }
+            ]
+          },
+          "companyMenu": {
+            "title": "Company",
+            "links": [
+              { "name": "Terms & Conditions", "url": "/terms" },
+              { "name": "Privacy Policy", "url": "/privacy" },
+              { "name": "Contact us", "url": "/contact" }
+            ]
+          },
+          "contactInfo": {
+            "title": "Get in touch",
+            "address": "B-1213 We Work, Andheri 400093",
+            "phoneNumbers": [
+              "+91-8850991017",
+              "+91-8424853124"
+            ],
+            "email": "info@FutureEdges.in"
+          },
+          "socialLinks": [
+            { "platform": "Twitter", "url": "https://twitter.com" },
+            { "platform": "Facebook", "url": "https://facebook.com" }
+          ]
+        }
+      }      
+  

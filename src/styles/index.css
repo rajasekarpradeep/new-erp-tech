@@ -1,0 +1,436 @@
+/* Variables for colors, fonts, and reusability */
+:root {
+  --font-manrope: 'Manrope', sans-serif;
+  --font-be-vietnam: 'Be Vietnam', sans-serif;
+
+  --primary-color: #ff6b6b;        /* Main accent color */
+  --secondary-color: #4ecdc4;      /* Secondary accent color */
+  --background-color: #ffffff;      /* Background color */
+  --header-color: #D20202;          /* Header text color */
+  --banner-heading-color: #F03939;  /* Banner heading color */
+  --banner-subheading-color: #E82121; /* Banner subheading color */
+  --text-color: #191919;            /* Default text color */
+  --testimonial-heading-color: #000000; /* Testimonial heading color */
+  --button-bg-primary: #FF4820;    /* Primary button background color */
+  --button-bg-secondary: #407BEF;   /* Secondary button background */
+  --button-bg-tertiary: #D20202;  /* tertiary button background */
+  --button-no-bg-text: #D20202;     /* no button text color */
+  --button-text-color: #FFFFFF;     /* Button text color */
+  --course-card-bg: #661717D1;      /* Course card background */
+  --course-card-text: #FFFFFF;      /* Course card text color */
+}
+
+/* Global styles */
+body {
+  font-family: var(--font-manrope);
+  margin: 0;
+  padding: 0;
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+h1, h2, h3 {
+  margin: 0;
+  padding: 10px 10px 10px 0px;
+}
+button{
+  background: none;
+  border: none;
+}
+/* Reusable button styles */
+.primary-btn {
+  background-color: var(--button-bg-primary);
+  color: var(--button-text-color);
+  border: none;
+  padding: 10px 20px;
+  font-family: var(--font-manrope);
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.secondary-btn {
+  background-color: var(--button-bg-secondary);
+  color: var(--button-text-color);
+  border: none;
+  padding: 10px 20px;
+  font-family: var(--font-manrope);
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.primary-btn-dark {
+  background-color: var(--button-bg-tertiary);
+  color: var(--button-text-color);
+  border: none;
+  padding: 10px 20px;
+  font-family: var(--font-manrope);
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.primary-btn-no-bg{
+  color: var(--button-no-bg-text);
+}
+
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+/* Header styles */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: var(--background-color);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+header img {
+  height: 50px;
+}
+
+header h1{
+  color: #D20202;
+}
+
+header nav ul {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+
+header nav ul li {
+  font-weight: bold;
+  color: var(--header-color);
+}
+
+/* Banner styles */
+.banner {
+  background-image: url('/assets/images/banner.jpg');
+  background-size: cover;
+  background-position: center;
+  color: var(--banner-heading-color);
+  padding: 100px 20px;
+  text-align: left;
+  display: flex;
+  align-items: center;
+}
+
+.banner h1 {
+  font-size: 56px;
+  font-weight: 800;
+}
+
+.banner h2 {
+  font-size: 20px;
+  color: var(--banner-subheading-color);
+}
+
+.banner p{
+  font-size: 18px;
+  color: var(--text-color);
+  text-wrap: balance;
+}
+
+.banner button {
+  margin-top: 20px;
+}
+
+/* Courses section styles */
+.courses {
+  padding: 40px 20px;
+  background-color: var(--background-color);
+}
+
+.courses h1 {
+  text-align: center;
+  color: var(--banner-heading-color);
+  font-size: 56px;
+}
+
+.courses p {
+  text-align: center;
+  font-size: 24px;
+  color: var(--testimonial-heading-color);
+}
+
+.courses-list {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.course-card {
+  color: var(--course-card-text);
+  border: 1px solid #000000;
+  border-radius: 20px;
+  text-align: center;
+  width: 340px;
+}
+
+.course-card h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.course-card p {
+  margin-bottom: 20px;
+}
+
+.course-card-header{
+  width: 100%;
+  background-color: var(--course-card-bg);
+  min-height: 150px;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+}
+
+.course-card-header h2{
+  font-size: 30px;
+  text-align: left;
+  padding: 0 20px;
+}
+
+.course-card-body ul{
+  padding: 20px 40px;
+}
+
+.course-card-body ul li{
+  color: var(--text-color);
+  text-align: left;
+}
+
+.course-btns{
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+}
+
+.course-btns button{
+  margin-bottom: 20px;
+}
+
+/* Testimonials section styles */
+.testimonials {
+  padding: 40px 20px;
+  background-color: var(--background-color);
+}
+
+.testimonials h2 {
+  text-align: center;
+  font-size: 36px;
+}
+
+blockquote {
+  font-size: 18px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: var(--secondary-color);
+  color: var(--testimonial-heading-color);
+  border-radius: 8px;
+  max-width: 600px;
+  text-align: center;
+}
+
+blockquote footer {
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+/* Features section styles */
+.features {
+  padding: 40px 20px;
+  background-color: var(--background-color);
+}
+
+.features h2 {
+  text-align: center;
+  font-size: 36px;
+}
+
+.feature-list {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.feature-card {
+  width: 250px;
+  text-align: center;
+}
+
+.feature-card img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.feature-card h3 {
+  margin-top: 10px;
+  font-size: 24px;
+}
+
+.feature-card p {
+  margin-top: 5px;
+  font-size: 16px;
+}
+
+/* Instructors section styles */
+.instructors {
+  padding: 40px 20px;
+  background-color: var(--background-color);
+}
+
+.instructors h2 {
+  text-align: center;
+  font-size: 36px;
+}
+
+.instructor-list {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.instructor-card {
+  width: 250px;
+  text-align: center;
+}
+
+.instructor-card img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.instructor-card h3 {
+  margin-top: 10px;
+  font-size: 24px;
+}
+
+.instructor-card p {
+  margin-top: 5px;
+  font-size: 16px;
+}
+
+/* Alumni section styles */
+.alumni {
+  padding: 40px 20px;
+  background-color: var(--background-color);
+}
+
+.alumni h2 {
+  text-align: center;
+  font-size: 36px;
+}
+
+.alumni-list {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.alum-card {
+  background-color: var(--secondary-color);
+  color: var(--text-color);
+  padding: 20px;
+  border-radius: 8px;
+  width: 250px;
+  text-align: center;
+}
+
+.alum-card h3 {
+  font-size: 24px;
+}
+
+.alum-card p {
+  margin-top: 10px;
+  font-size: 16px;
+}
+
+/* Footer */
+.footer {
+  background-color: #440303;
+  color: #fff;
+  padding: 40px 20px;
+  font-family: Arial, sans-serif;
+}
+
+.footer-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-logo h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.footer-menu h3,
+.footer-contact h3,
+.footer-social h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.footer-menu ul,
+.footer-social ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-menu li,
+.footer-social li {
+  margin-bottom: 5px;
+}
+
+.footer-menu a,
+.footer-contact a,
+.footer-social a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer-menu a:hover,
+.footer-social a:hover,
+.footer-contact a:hover {
+  text-decoration: underline;
+}
+
+.footer-contact p {
+  margin: 5px 0;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 20px;
+  border-top: 1px solid #444;
+  padding-top: 20px;
+  font-size: 14px;
+}
+
+.footer-social ul {
+  display: flex;
+  gap: 10px;
+}
+
+.footer-social li {
+  display: inline-block;
+}
